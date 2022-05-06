@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-redis-phet-pierre
+  labels:
+    app: node-redis-phet-pierre
+spec:
+  imagePullSecrets:
+    - name: regcred
+  containers:
+    - name: node-redis-phet-pierre
+      image: cloud.canister.io:5000/arhturescriou/node-redis
+      imagePullPolicy: IfNotPresent
+      env:
+        - name: PORT
+          value: '8080'
+        - name: REDIS_URL
+          value: redis://10.3.209.236

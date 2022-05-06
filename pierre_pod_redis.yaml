@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-phet-pierre
+  labels:
+    app: redis-phet-pierre
+spec:
+  containers:
+    - name: redis-phet-pierre
+      image: redis 
+      imagePullPolicy: IfNotPresent
