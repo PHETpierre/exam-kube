@@ -6,10 +6,12 @@ redis-phet-pierre
 redis-phet-pierre
 
 ## Fichiers yaml des pods
+'''
 pierre_deployment_node.yaml
- Déploie plusieurs pod avec l'image node-redis, ce serveur permet de communiquer avec la base de donnée redis déployer sur le cluster.
- L'image est située à l'adresse cloud.canister.io:5000/arhturescriou/node-redis.
- L'image est privée et nécessite regcred pour être récupérée.
+'''
+ Déploie plusieurs pod avec l'image node-redis, ce serveur permet de communiquer avec la base de donnée redis déployer sur le cluster.<br>
+ L'image est située à l'adresse cloud.canister.io:5000/arhturescriou/node-redis.<br>
+ L'image est privée et nécessite regcred pour être récupérée.<br>
 
  Variables d'environnement:
     - replicas: indique le nombre de pod créée
