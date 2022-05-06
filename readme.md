@@ -14,7 +14,7 @@ redis-phet-pierre
  Variables d'environnement:<br>
     - replicas: indique le nombre de pod créée<br>
     - PORT: indique le port sur lequel le serveur écoute<br>
-    - REDIS_URL : indique l'url de la BDD redis<br>
+    - REDIS_URL : indique l'url de la BDD redis. Il faut y indiquer l'adresse CLUSTER-IP et le port du service correspondant au pod redis<br>
 
 pierre_pod_node.yaml<br>
   Déploie un seul pod avec un serveur node-redis.
